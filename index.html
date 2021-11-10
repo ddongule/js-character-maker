@@ -9,28 +9,37 @@
       href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSSaemmul.woff"
       preload
     />
-    <title>Document</title>
+    <title>캐릭터 커스터마이징</title>
   </head>
   <body>
     <main class="container">
       <div class="character-wrapper">
-        <div class="image"></div>
+        <div class="image-wrapper">
+          <img src="" alt="캐릭터 이미지" class="image" />
+        </div>
         <div class="infos">
-          <div class="race">
-            <div><span>▶</span>종족</div>
-            <div class="detail">포켓몬</div>
+          <div class="hair">
+            <div><span>▶</span>머리스타일</div>
+            <input class="detail" type="range" min="0" max="2" value="0" />
+          </div>
+          <div class="body">
+            <div><span>▶</span>체형</div>
+            <input class="detail" type="range" min="0" max="2" value="0" />
           </div>
           <div class="job">
             <div><span>▶</span>직업</div>
-            <div class="detail">지우</div>
+            <select class="detail"></select>
+            <button class="action-button">Click</button>
           </div>
           <div class="ability">
             <div><span>▶</span>능력</div>
-            <div class="detail">피카츄!!</div>
+            <select class="detail"></select>
+            <button class="action-button">Click</button>
           </div>
         </div>
+        <p class="introduction"></p>
       </div>
     </main>
-    <script href="./src/index.js"></script>
+    <script src="./src/index.js" type="module"></script>
   </body>
 </html>
